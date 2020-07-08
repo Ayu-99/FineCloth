@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent"
+    tools:context=".customer.Query">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textView"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:text="Write your query below:-"></TextView>
+
+
+
+        <EditText
+            android:id="@+id/editTextQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/black"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="342dp" />
+
+
+        <Button
+            android:id="@+id/buttonSendQuery"
+            android:layout_marginTop="40dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg6"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="SEND QUERY" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textViewQueryResult"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="Your query will be answered shorty.."></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textViewQueryResult1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="Highly appreciate your patience :)"></TextView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    android:padding="10dp"
+    tools:context=".customer.SignUp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:onClick="login"
+            android:layout_height="100dp"
+            android:src="@drawable/finecloth">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPink"
+            android:textSize="25dp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            android:text="Create Your account">
+
+        </TextView>
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorPink"
+            android:elevation="5dp"
+            android:background="@drawable/bg4"></EditText>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorPink"
+            android:elevation="5dp"
+            android:background="@drawable/bg4"></EditText>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnSignUp"
+        android:text="Join Us"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:onClick="signUp"
+        android:background="@drawable/bg1"
+        android:layout_marginTop="25dp"
+        android:elevation="5dp"></Button>
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"></ProgressBar>
+
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:text="By pressing 'Join Us', You agree to our terms and conditions."
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:id="@+id/emailVerificationTextView"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="15dp"
+            android:onClick="login"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginRight="40dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:text="Already Registered?  Log in !!">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

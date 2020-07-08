@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finecloth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/finecloth"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".customer.AllPurchases" />
+        <activity android:name=".customer.Buy" />
+        <activity android:name=".customer.Cart" />
+        <activity android:name=".customer.SearchResult" />
+        <activity android:name=".customer.Search" />
+        <activity android:name=".customer.Query" />
+        <activity android:name=".customer.ViewItem" />
+        <activity android:name=".customer.Profile" />
+        <activity android:name=".customer.DashboardActivity" />
+        <activity android:name=".Item.ItemImage" />
+        <activity android:name=".customer.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".customer.SignUp" />
+        <activity android:name=".Category.ViewAllCategories" />
+        <activity android:name=".Item.ViewAllItems" />
+        <activity android:name=".Item.UpdateItem" />
+        <activity android:name=".Category.AddNewCategory" />
+        <activity android:name=".Item.AddNewItem" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".CustomerDashboard" />
+        <activity android:name=".CategoryDashboard" />
+        <activity android:name=".ItemDashboard" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_uvmilFv72Adj37"
+
+            ></meta-data>
+    </application>
+
+</manifest>

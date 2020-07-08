@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSkin"
+    android:orientation="vertical"
+    tools:context=".Item.AddNewItem">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Enter Name of Item"></TextView>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+       />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Description of Item"></TextView>
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Price of Item/metre"></TextView>
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Points of Item"></TextView>
+    <EditText
+        android:id="@+id/editTextPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+         />
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose category of Item"></TextView>
+    <Spinner
+        android:id="@+id/spinnerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Add image of item"></TextView>
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:srcCompat="@drawable/categorydb" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addImage"
+            android:text="ADD IMAGE"></Button>
+
+<!--        <Button-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/uploadImage"-->
+<!--            android:background="@drawable/splash"-->
+<!--            android:text="UPLOAD IMAGE"></Button>-->
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/splash"
+        android:id="@+id/addItem"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="ADD ITEM"></Button>
+
+</LinearLayout>

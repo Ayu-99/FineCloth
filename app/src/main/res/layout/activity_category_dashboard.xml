@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".CategoryDashboard">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:layout_margin="20dp"
+        android:columnCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:onClick="addNewCategory"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_row="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="28dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="55dp"
+            android:layout_column="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/categorydb"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/newitem"
+                    android:layout_marginTop="12dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Category"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="center"></TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:onClick="updateCategory"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="18dp"-->
+<!--            app:cardElevation="18dp"-->
+<!--            android:layout_column="1">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/categorydb"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/updateitem"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    ></ImageView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Update the Category"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textAlignment="center"></TextView>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:onClick="deleteCategory"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="18dp"-->
+<!--            app:cardElevation="18dp"-->
+<!--            android:layout_column="0">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@drawable/categorydb"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal">-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/deleteitem"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    ></ImageView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Delete a Category"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textAlignment="center"></TextView>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_row="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="viewCategories"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="35dp"
+            android:layout_column="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/categorydb"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/viewitems"
+                    android:layout_marginTop="12dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all Categories"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textAlignment="center"></TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>

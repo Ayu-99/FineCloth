@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".customer.DashboardActivity">
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:id="@+id/recycle">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/textViewNoCart"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_centerInParent="true"
+        android:textStyle="italic"
+        android:textColor="@color/colorPink"
+        android:text="No item in Cart!!" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"></ProgressBar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorSkin"
+        app:itemTextColor="@android:color/black"
+        app:labelVisibilityMode="labeled"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNavigationView"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@android:color/black"
+        app:menu="@menu/bottom_navigation_menu"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg1"
+    tools:context=".customer.Login">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="signUp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/finecloth">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:hint="Email"
+                android:id="@+id/email"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPink"
+                android:elevation="5dp"
+                android:background="@drawable/bg4"></EditText>
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:hint="Password"
+                android:id="@+id/password"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPink"
+                android:elevation="5dp"
+                android:background="@drawable/bg4"></EditText>
+
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:id="@+id/btnSignUp"
+                android:text="Log In"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:onClick="login"
+                android:background="@drawable/bg2"
+                android:layout_marginTop="25dp"
+                android:elevation="5dp"></Button>
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"></ProgressBar>
+
+            <CheckBox
+                android:layout_marginTop="45dp"
+                android:buttonTint="@android:color/white"
+                android:id="@+id/checkBoxRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Remember me"
+                />
+
+            <CheckBox
+                android:buttonTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:id="@+id/checkBoxKeepLoggedIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep me logged in" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:onClick="signUp"
+                android:textColor="@android:color/white"
+                android:text="Not Registered? Sign Up !!">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

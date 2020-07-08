@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent"
+    tools:context=".customer.ViewItem">
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageViewItemImage"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_marginTop="80dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/textViewDesc"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Desc" />
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/textViewPrice"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Price" />
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/textViewPoints"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Points" />
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/textViewCategory"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Category" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:background="@drawable/bg6"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="BUY" />
+</LinearLayout>

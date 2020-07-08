@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".customer.Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/girl" />
+
+        <TextView
+            android:id="@+id/textViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/colorPink"
+            android:text="Your Profile" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:text="Email" />
+
+        <Button
+            android:id="@+id/buttonCart"
+            android:layout_marginTop="40dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg1"
+            android:text="View My Cart" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/buttonPurchases"
+            android:background="@drawable/bg1"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="View My Purchases" />
+
+        <Button
+            android:id="@+id/buttonQuery"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg1"
+            android:layout_height="wrap_content"
+            android:text="Ask a query" />
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@drawable/bg6"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/bottomNavigationView"
+            app:itemBackground="@android:color/white"
+            app:itemIconTint="@android:color/black"
+            app:itemTextColor="@android:color/black"
+            app:menu="@menu/bottom_navigation_menu"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "436962358787",
+    "firebase_url": "https://finecloth-7099e.firebaseio.com",
+    "project_id": "finecloth-7099e",
+    "storage_bucket": "finecloth-7099e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436962358787:android:382251da06dadd6ed3c036",
+        "android_client_info": {
+          "package_name": "com.example.finecloth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436962358787-9dcdcc3umm3d4qggjgqe7th4hf4jt1ia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finecloth",
+            "certificate_hash": "e0483bbf71abb35e517a158f26ec3216e991c1c6"
+          }
+        },
+        {
+          "client_id": "436962358787-v9t2ai6hoop8cer4j4suvom9h96v9gan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPnXCE1zozss1DtMv2SC0e8fWGSYY3eU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436962358787-v9t2ai6hoop8cer4j4suvom9h96v9gan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSkin">#F7E4C1</color>
+    <color name="colorPrimary">#FCA181</color>
+    <color name="colorPrimaryDark">#F0FDA1</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="customerBg">#E7F8C8</color>
+    <color name="colorPink">#E91E63</color>
+
+
+</resources>

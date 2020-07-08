@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    tools:context=".ItemDashboard">
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="AAja bas"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        ></TextView>-->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:layout_margin="20dp"
+        android:columnCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_row="0"
+            android:layout_gravity="fill"
+            android:onClick="addNewItem"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="25dp"
+            android:layout_column="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg2"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/girl"></ImageView>-->
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/newitem"
+                    android:layout_marginTop="12dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Item"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="center"></TextView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:onClick="updateItem"-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="18dp"-->
+<!--            app:cardElevation="18dp"-->
+<!--            android:layout_column="1">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/itemdb"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/updateitem"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    ></ImageView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Update An Item"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textAlignment="center"></TextView>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:onClick="deleteItem"-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="18dp"-->
+<!--            app:cardElevation="18dp"-->
+<!--            android:layout_column="0">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@drawable/itemdb"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/deleteitem"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    ></ImageView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Delete an Item"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textAlignment="center"></TextView>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_row="1"
+            android:layout_gravity="fill"
+            android:onClick="viewItems"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="25dp"
+            android:layout_column="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg2"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/viewitems"
+                    android:layout_marginTop="12dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all Items"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textAlignment="center"></TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:weightSum="10"-->
+<!--    tools:context=".ItemDashboard">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="2">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textGrid"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:textSize="34dp"-->
+<!--            android:text="ITEM DASHBOARD"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <GridLayout-->
+<!--        android:id="@+id/gridLayout"-->
+<!--        android:rowCount="2"-->
+<!--        android:columnCount="2"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:columnOrderPreserved="false"-->
+<!--        android:padding="14dp"-->
+<!--        android:layout_weight="8"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_columnWeight=""-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src=""-->
+<!--                    android:layout_gravity="center_horizontal"></ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add new Item"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </TextView>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_columnWeight=""-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/additem"-->
+<!--                    android:layout_gravity="center_horizontal"></ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add new Item"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </TextView>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_columnWeight=""-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp"-->
+
+
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src=""-->
+<!--                    android:layout_gravity="center_horizontal"></ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add new Item"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor=""-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </TextView>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_columnWeight=""-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp"-->
+
+
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src=""-->
+<!--                    android:layout_gravity="center_horizontal"></ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add new Item"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor=""-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </TextView>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </GridLayout>-->
+
+<!--</LinearLayout>-->

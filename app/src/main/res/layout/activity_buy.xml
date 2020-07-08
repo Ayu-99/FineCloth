@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash"
+    tools:context=".customer.Buy">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/textViewLength"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:text="Enter the length(in metres) you want:-[min. 1]" />
+
+        <EditText
+            android:id="@+id/editTextLength"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Enter here" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/textViewAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:text="Enter the address at which the order is to be delivered:-" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Enter here" />
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/textViewPhone"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:text="Enter your Phone Number:-" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Enter here" />
+
+        <TextView
+            android:id="@+id/textViewTotalCost"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonViewTotal"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="View Total" />
+
+        <Button
+            android:id="@+id/buttonMakePayment"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Make Payment" />
+    </LinearLayout>
+
+</LinearLayout>
