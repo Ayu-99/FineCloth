@@ -8,13 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".customer.ViewItem">
 
+<!--    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
 
+<!--        android:layout_gravity="center"-->
+<!--        android:id="@+id/imageViewItemImage"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:srcCompat="@drawable/item"></com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView>-->
     <ImageView
         android:layout_gravity="center"
         android:id="@+id/imageViewItemImage"
-        android:layout_marginTop="20dp"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="matrix"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
         app:srcCompat="@drawable/item" />
 
     <LinearLayout
@@ -24,7 +32,7 @@
         android:orientation="vertical">
         <TextView
             android:id="@+id/textViewName"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="2dp"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:textStyle="bold"

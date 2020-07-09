@@ -57,7 +57,9 @@ public class SearchResult extends AppCompatActivity implements RecyclerViewClick
                     for(DocumentSnapshot d:list){
                         item i=d.toObject(item.class);
                         i.setId(d.getId());
+                        Log.i("item",i.getName());
                         Log.i("category",category);
+
                         if(i.getCategory().equals(category)){
                             itemList.add(i);
                         }

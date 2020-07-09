@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -42,6 +43,7 @@ public class ViewAllCategories extends AppCompatActivity {
                     for(DocumentSnapshot d:list){
                         category c=d.toObject(category.class);
                         categoryList.add(c);
+
 
                     }
 

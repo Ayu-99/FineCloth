@@ -61,7 +61,7 @@ public class ViewAllItems extends AppCompatActivity {
         intent.putExtra("desc",desc);
         intent.putExtra("price",price);
         intent.putExtra("points",points);
-        intent.putExtra("pos",String.valueOf(pos));
+        intent.putExtra("pos",position);
         intent.putExtra("imageUrl",imageUrl);
         startActivityForResult(intent,101);
 

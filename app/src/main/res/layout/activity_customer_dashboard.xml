@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg3"
-    tools:context=".ItemDashboard">
+    tools:context=".CustomerDashboard">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -21,6 +21,7 @@
             android:layout_row="0"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
+            android:onClick="viewAllSuggestions"
             android:layout_columnWeight="1"
             app:cardCornerRadius="38dp"
             app:cardElevation="8dp"
@@ -43,7 +44,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="View all customers"
+                    android:text="View all suggestions"
                     android:textStyle="bold"
                     android:textSize="30sp"
                     android:layout_marginTop="12dp"
@@ -57,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_gravity="fill"
+            android:onClick="viewAllOrders"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             app:cardCornerRadius="38dp"
@@ -81,7 +83,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chat with the customer"
+                    android:text="View all the orders"
                     android:layout_marginTop="12dp"
                     android:textStyle="bold"
                     android:textSize="30sp"

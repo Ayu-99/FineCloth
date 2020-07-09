@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.finecloth.Intro.IntroActivity;
+import com.example.finecloth.customer.DashboardActivity;
 import com.example.finecloth.customer.Login;
 
 public class SplashActivity extends AppCompatActivity {
@@ -23,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent i=new Intent(SplashActivity.this,
-                        Login.class);
+                        IntroActivity.class);
                 //Intent is used to switch from one activity to another.
 
                 startActivity(i);

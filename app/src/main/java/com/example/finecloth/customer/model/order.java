@@ -1,10 +1,21 @@
 package com.example.finecloth.customer.model;
 
 import com.example.finecloth.Item.item;
+import com.google.firebase.firestore.Exclude;
 
 public class order {
 
 
+    @Exclude
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
     String length;
     String address;
     String phone;

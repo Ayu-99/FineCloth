@@ -102,8 +102,8 @@ public class UpdateItem extends AppCompatActivity {
         arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,categories);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerCategories.setAdapter(arrayAdapter);
-        category=categories[Integer.parseInt(intent.getStringExtra("pos"))];
-        spinnerCategories.setSelection(Integer.parseInt(intent.getStringExtra("pos")));
+//        category=categories[Integer.parseInt(intent.getStringExtra("pos"))];
+//        spinnerCategories.setSelection(Integer.parseInt(intent.getStringExtra("pos")));
         imageUrl=intent.getStringExtra("imageUrl");
 
         spinnerCategories.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

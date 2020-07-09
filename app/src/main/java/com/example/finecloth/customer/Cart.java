@@ -80,7 +80,10 @@ public class Cart extends AppCompatActivity implements RecyclerViewClickInterfac
 //        if(itemList.isEmpty()){
 ////            Log.i("items",itemList.get(0).getName());
 //            progressBar.setVisibility(View.GONE);
-//            Toast.makeText(Cart.this, "There are no items in Cart!!", Toast.LENGTH_LONG).show();
+//            textViewNoCart.setVisibility(View.VISIBLE);
+//            recyclerView.setVisibility(View.GONE);
+//
+////            Toast.makeText(Cart.this, "There are no items in Cart!!", Toast.LENGTH_LONG).show();
 //
 //        }
 
@@ -118,6 +121,10 @@ public class Cart extends AppCompatActivity implements RecyclerViewClickInterfac
                 a.notifyDataSetChanged();
 
                 itemList.remove(pos);
+//                if(itemList.size()==0){
+//                    textViewNoCart.setVisibility(View.VISIBLE);
+//                    return;
+//                }
                 a.notifyItemRemoved(pos);
                 recyclerView.setAdapter(a);
 

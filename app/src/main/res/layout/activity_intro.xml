@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Intro.IntroActivity">
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/screen_viewpager"
+        android:layout_height="628dp" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:drawableTint="@color/colorPink"
+        android:textColor="@color/colorPink"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="MOVE TO NEXT" />
+
+    <Button
+        android:id="@+id/buttonGetStarted"
+
+        android:layout_marginBottom="100dp"
+        android:visibility="invisible"
+        android:layout_marginLeft="130dp"
+        android:layout_width="130dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@drawable/bg3"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="GET STARTED" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="100dp"
+        android:id="@+id/tabLayout"
+        app:tabBackground="@drawable/indicator_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        app:tabIndicator="@null"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.tabs.TabLayout>
+</RelativeLayout>

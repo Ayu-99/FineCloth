@@ -28,14 +28,7 @@
 
 
 
-            <ImageView
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/itemimageView"
-                android:layout_marginLeft="5dp"
-                android:src="@mipmap/ic_launcher">
-            </ImageView>
+
 
 
             <LinearLayout
@@ -47,56 +40,69 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Name"
+                    android:text="UserEmail"
                     android:textStyle="bold"
-                    android:id="@+id/itemName"
+                    android:id="@+id/UserEmail"
                     android:textSize="18sp"></TextView>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Desc"
+                    android:text="Address"
                     android:textStyle="italic"
-                    android:id="@+id/itemDesc"
+                    android:id="@+id/UserAddress"
                     android:textSize="15sp"></TextView>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Phone"
+                    android:id="@+id/UserPhone"
+                    android:textSize="15sp"></TextView>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Bill"
+                    android:id="@+id/UserTotalBill"
+                    android:textSize="15sp"></TextView>
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:backgroundTint="@android:color/black"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ItemName"
+                    android:id="@+id/ItemName"
+                    android:textSize="15sp"></TextView>
+
                 <TextView
                     android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Category"
-                    android:id="@+id/itemCategory"
+                    android:id="@+id/ItemCategory"
                     android:textSize="15sp"></TextView>
                 <TextView
                     android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Price"
-                    android:id="@+id/itemPrice"
-                    android:textSize="15sp"></TextView>
-                <TextView
-                    android:textStyle="italic"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Points"
-                    android:id="@+id/itemPoints"
+                    android:text="Length"
+                    android:id="@+id/ItemLength"
                     android:textSize="15sp"></TextView>
 
-                <Button
-                    android:id="@+id/buttonAddToCart"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textStyle="bold"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="50dp"
-                    android:background="@drawable/splash"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="5dp"
-                    android:text="Add to cart" />
+
+
 
             </LinearLayout>
 
 
         </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 

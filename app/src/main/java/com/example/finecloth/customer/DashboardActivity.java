@@ -155,6 +155,7 @@ public class DashboardActivity extends AppCompatActivity implements RecyclerView
 
         pos=position;
         Intent intent=new Intent(DashboardActivity.this,ViewItem.class);
+        intent.putExtra("id",i.getId());
         intent.putExtra("name",i.getName());
         intent.putExtra("desc",i.getDesc());
         intent.putExtra("price",i.getPrice());

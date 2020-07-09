@@ -12,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".admin.ViewAllSuggestions"></activity>
+        <activity android:name=".admin.ViewOrders" />
+        <activity android:name=".Intro.IntroActivity" />
         <activity android:name=".customer.AllPurchases" />
         <activity android:name=".customer.Buy" />
         <activity android:name=".customer.Cart" />
@@ -22,20 +25,20 @@
         <activity android:name=".customer.Profile" />
         <activity android:name=".customer.DashboardActivity" />
         <activity android:name=".Item.ItemImage" />
-        <activity android:name=".customer.Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".customer.Login" />
         <activity android:name=".customer.SignUp" />
         <activity android:name=".Category.ViewAllCategories" />
         <activity android:name=".Item.ViewAllItems" />
         <activity android:name=".Item.UpdateItem" />
         <activity android:name=".Category.AddNewCategory" />
         <activity android:name=".Item.AddNewItem" />
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".CustomerDashboard" />
         <activity android:name=".CategoryDashboard" />
         <activity android:name=".ItemDashboard" />
@@ -43,9 +46,7 @@
 
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_uvmilFv72Adj37"
-
-            ></meta-data>
+            android:value="rzp_test_uvmilFv72Adj37" />
     </application>
 
 </manifest>

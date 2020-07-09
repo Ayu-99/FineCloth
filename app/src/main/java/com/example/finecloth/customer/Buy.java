@@ -32,7 +32,7 @@ public class Buy extends AppCompatActivity implements PaymentResultListener {
     ActionBar actionBar;
     private static final String TAG=Buy.class.getSimpleName();
     FirebaseFirestore db;
-    String price,name,points,desc,category,imageUrl;
+    String price,name,points,desc,category,imageUrl,id;
     int pricepermeter;
     SharedPreferences sp4,sp3;
     int length,total;
@@ -109,6 +109,7 @@ public class Buy extends AppCompatActivity implements PaymentResultListener {
         desc=intent.getStringExtra("desc");
         name=intent.getStringExtra("name");
         points=intent.getStringExtra("points");
+        id=intent.getStringExtra("id");
         category=intent.getStringExtra("category");
         imageUrl=intent.getStringExtra("imageUrl");
         editTextLength=findViewById(R.id.editTextLength);
@@ -183,6 +184,52 @@ public class Buy extends AppCompatActivity implements PaymentResultListener {
                     return;
                 }
 
+//
+//                db.collection("Items").document(i.getId())
+//                        .update(
+//                                "name",name,
+//                                "desc", desc,
+//                                "price",price,
+//                                "points",points+1,
+//                                "category",category,
+//                                "imageUrl",imageUrl
+//            );
+//                if(id!=null){
+//                    Log.i("messgae",id);
+//                }else{
+//                    Log.i("shit","its null");
+//                }
+
+
+                item i1=new item(
+
+                        name,
+                        desc,
+                        price,
+                        points+1,
+                        category,
+                        imageUrl
+
+                );
+
+
+
+                db.collection("Items").document(id).set(i1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+
+
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(Buy.this, "Not able to update!!", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+
+
                 makePayments();
 
 
@@ -202,6 +249,7 @@ public class Buy extends AppCompatActivity implements PaymentResultListener {
 //        item i;
 //        String totalAmount;
 //        String email;
+
 
         order o=new order(
 

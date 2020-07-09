@@ -35,6 +35,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     testImplementation 'junit:junit:4.12'
+    implementation 'com.zolad:zoominimageview:1.0.0'
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
 //    implementation 'com.android.support:design:28.0.0'
     implementation 'com.razorpay:checkout:1.5.12'
     implementation 'com.squareup.picasso:picasso:2.71828'
@@ -43,4 +46,5 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 }

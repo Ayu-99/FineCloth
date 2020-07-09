@@ -38,7 +38,7 @@ public class ItemImage extends AppCompatActivity {
     int image_req=1;
     Uri filePath;
     String downloadUrl,name,desc,price,points;
-    int pos;
+    String pos;
     ProgressDialog progressDialog;
     StorageReference storageReference;
 
@@ -150,7 +150,7 @@ public class ItemImage extends AppCompatActivity {
         desc=intent.getStringExtra("desc");
         price=intent.getStringExtra("price");
         points=intent.getStringExtra("points");
-//        pos=intent.getIntExtra("pos");
+        pos=intent.getStringExtra("pos");
         storageReference= FirebaseStorage.getInstance().getReference().child("Item images");
 
         btnChoose.setOnClickListener(new View.OnClickListener() {

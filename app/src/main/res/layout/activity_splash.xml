@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:layout_gravity="center"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         app:srcCompat="@drawable/finecloth"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="25dp" />

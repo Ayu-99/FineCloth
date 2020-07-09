@@ -71,7 +71,7 @@
             android:textColor="@android:color/white"
             android:background="@drawable/bg1"
             android:layout_height="wrap_content"
-            android:text="Ask a query" />
+            android:text="Write a Suggestion" />
         <Button
             android:id="@+id/buttonLogout"
             android:layout_marginTop="20dp"

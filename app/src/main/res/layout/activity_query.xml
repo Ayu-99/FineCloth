@@ -21,7 +21,7 @@
             android:textSize="20dp"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
-            android:text="Write your query below:-"></TextView>
+            android:text="Write your Suggestion below:-"></TextView>
 
 
 
@@ -47,7 +47,14 @@
             android:textColor="@android:color/black"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:text="SEND QUERY" />
+            android:text="SEND SUGGESTION" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"></ProgressBar>
 
         <TextView
             android:layout_width="match_parent"
@@ -57,7 +64,7 @@
             android:layout_marginTop="50dp"
             android:textSize="20dp"
             android:textColor="@android:color/black"
-            android:text="Your query will be answered shorty.."></TextView>
+            android:text="Thanks for your valuable suggestion"></TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -67,7 +74,7 @@
             android:layout_marginTop="50dp"
             android:textSize="20dp"
             android:textColor="@android:color/black"
-            android:text="Highly appreciate your patience :)"></TextView>
+            android:text="Will look into it ASAP :)"></TextView>
 
 
 
