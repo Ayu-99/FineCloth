@@ -2,12 +2,12 @@
 An e commerce android application especially designed for clothing materials in specific to boutiques!!!
 Features-
 
-##Admin App-
+## Admin App-
 1) Add new Category
 2) Add new Item - Upload data and images to Firebase Firestore and Firebase Storage
 3) View suggestions and View orders
 
-##Customer App-
+## Customer App-
 1) Add to Cart
 2) Buy an item
 3) Payment Gateway- RazorPay API
