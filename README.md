@@ -20,23 +20,23 @@ Features-
 
 
 ## admin dashboard
-<img src="screenshots/admin-dashboard.jpeg" width=350 height=650>
+<img src="screenshots/admin-dashboard.jpg" width=350 height=650>
 ## item dashboard
-<img src="screenshots/add new item.jpeg" width=350 height=650>
+<img src="screenshots/add new item.jpg" width=350 height=650>
 ## add new item
-<img src="screenshots/add new item form.jpeg" width=350 height=650>
+<img src="screenshots/add new item form.jpg" width=350 height=650>
 ## upload image
-<img src="screenshots/upload image.jpeg" width=350 height=650>
+<img src="screenshots/upload image.jpg" width=350 height=650>
 ## category dashbaord
-<img src="screenshots/category.jpeg" width=350 height=650>
+<img src="screenshots/category.jpg" width=350 height=650>
 ## add new category
-<img src="screenshots/add new category.jpeg" width=350 height=650>
+<img src="screenshots/add new category.jpg" width=350 height=650>
 ## view all categories
-<img src="screenshots/view category.jpeg" width=350 height=650>
+<img src="screenshots/view category.jpg" width=350 height=650>
 ## customer dashboard
-<img src="screenshots/customer.jpeg" width=350 height=650>
+<img src="screenshots/customer.jpg" width=350 height=650>
 ## view all suggestions
-<img src="screenshots/suggestions.jpeg" width=350 height=650>
+<img src="screenshots/suggestions.jpg" width=350 height=650>
 ## view all orders
 <img src="screenshots/orders.jpeg" width=350 height=650>
 
