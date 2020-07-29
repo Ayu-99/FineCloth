@@ -18,7 +18,7 @@ Features-
 
 # Screenshots
 
-
+# Admin
 ## admin dashboard
 <img src="screenshots/admin-dashboard.jpg" width=350 height=650>
 ## item dashboard
@@ -41,7 +41,7 @@ Features-
 <img src="screenshots/orders.jpeg" width=350 height=650>
 
 
-
+# Customer
 ## splash
 <img src="screenshots/splash.jpg" width=350 height=650>
 ## welcome screens
